@@ -4,6 +4,11 @@ This repository contains the Stata code and outputs for my econometrics project
 on how educational attainment predicts high-skill occupation status in the
 Netherlands using IPUMS International 2011 microdata.
 
+## Repository Maintainer
+
+**Atabak Nikouseresht**  
+MSc Applied Economics and Markets — University of Bologna
+
 ## Project overview
 
 - **Outcome:** `HighSkill` – indicator for ISCO 1–3 (managers, professionals, technicians).
