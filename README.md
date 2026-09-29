@@ -1,51 +1,26 @@
-# Educational Attainment & High-Skill Employment – Netherlands 2011
+# Education and High-Skill Employment — Netherlands, 2011
 
-This repository contains the Stata code and outputs for my econometrics project
-on how educational attainment predicts high-skill occupation status in the
-Netherlands using IPUMS International 2011 microdata.
+An applied microeconometrics course project studying the association between educational attainment and high-skill occupation status in the Netherlands, using IPUMS International 2011 census microdata.
 
-## Repository Maintainer
+## Research design
 
-**Atabak Nikouseresht**  
-MSc Applied Economics and Markets — University of Bologna
+The report defines high-skill occupations as ISCO major groups 1–3 and estimates a Linear Probability Model with education categories and demographic controls. A logit model and predicted margins are also reported. The report explicitly notes that the cross-sectional design does not establish a causal effect.
 
-## Project overview
+## Reported evidence
 
-- **Outcome:** `HighSkill` – indicator for ISCO 1–3 (managers, professionals, technicians).
-- **Key regressor:** `educnl` – categorical education variable.
-- **Controls:** age, sex, marital status, nativity.
-- **Methods:** Linear Probability Model (OLS) and Logit with marginal effects.
+The committed Stata output reports an analysis sample of 231,986 individuals. In its logit margins table, the predicted probability for the tertiary-education category is approximately 0.800, compared with approximately 0.051 for the no-education reference category. These are model-based predicted margins in the saved output, not causal effects.
 
-Main finding: university education raises the predicted probability of holding a
-high-skill job from about 5% (no education) to around 80%.
+## Files in this repository
 
-## Repository structure
+- [`group_15.pdf`](group_15.pdf) — full group report, including sample definition, model, and identification discussion.
+- [`Results.pdf`](Results.pdf) — saved Stata regression and margins output.
+- [`Graphs.pdf`](Graphs.pdf) — figures from the analysis.
 
-- `stata/` – Stata do-files
-  - `ipumsi_00002.do`: builds the raw dataset from the IPUMS extract.
-  - `[your_analysis_file].do`: cleans data and estimates the models.
+## Data and reproducibility limits
 
-- `output/`
-  - `Results.pdf`: regression tables and margins output.
-  - `Graphs.pdf`: age histogram and other figures.
-  - `group_15.pdf`: full project report (sample selection, model, identification).
+The IPUMS microdata extract is not included because access is governed by IPUMS terms. The repository also contains no Stata do-files: earlier instructions referred to files that are not present. Consequently, the displayed outputs can be inspected, but the cleaning and estimation workflow cannot currently be rerun from this repository. Do not use the placeholder filenames from older documentation as run instructions.
 
-- `data/`
-  - *Not included in the repository due to IPUMS licence restrictions.*
-  - You must download the same extract from IPUMS and save it as
-    `data/ipumsi_00002.dat` before running the code.
+To reproduce the analysis, the original do-files must first be recovered and committed, and a researcher must obtain a matching IPUMS extract under the applicable access terms. No data file should be redistributed here without confirming its license.
 
-## Data access
-
-Microdata are provided by **IPUMS International**.  
-To replicate the results, you must:
-
-1. Register at IPUMS International.
-2. Request the 2011 census extract for the Netherlands with the same variables.
-3. Download the `.dat` file and rename/place it as `data/ipumsi_00002.dat`.
-4. Open Stata and run `do stata/ipumsi_00002.do`.
-5. Then run `[your_analysis_file].do` to reproduce the tables and figures.
-
-## Requirements
-
-- Stata 17 (or compatible version).
+- **Academic context:** Econometrics project, University of Bologna
+- **Author:** Atabak Nikouseresht; completed with group collaborators
