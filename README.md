@@ -23,4 +23,4 @@ The IPUMS microdata extract is not included because access is governed by IPUMS 
 To reproduce the analysis, the original do-files must first be recovered and committed, and a researcher must obtain a matching IPUMS extract under the applicable access terms. No data file should be redistributed here without confirming its license.
 
 - **Academic context:** Econometrics project, University of Bologna
-- **Author:** Atabak Nikouseresht; completed with group collaborators
+- **Authors:** Atabak Nikouseresht, Kimia Shokri, and Mahgol Lamei
