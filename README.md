@@ -12,7 +12,7 @@ The committed Stata output reports an analysis sample of 231,986 individuals. In
 
 ## Files in this repository
 
-- [`group_15.pdf`](group_15.pdf) — full group report, including sample definition, model, and identification discussion.
+- [`group_15.pdf`](group_15.pdf) — full group report; student identifier values and personal contact metadata have been removed from this public copy, while author names and academic content are retained.
 - [`Results.pdf`](Results.pdf) — saved Stata regression and margins output.
 - [`Graphs.pdf`](Graphs.pdf) — figures from the analysis.
 
